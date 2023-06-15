@@ -56,8 +56,6 @@ const loadHome = () => {
   const proximoEvento = instance.data[1];
   home.querySelector('#titulo').textContent = proximoEvento.nombre;
   home.querySelector('#descripcion').textContent = proximoEvento.descripcion
-
-  console.log(proximoEvento);
   clock(proximoEvento.fechaInicio, home)
   
   
